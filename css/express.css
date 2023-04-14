@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(210, 110, 110);
+}
+.formunits{
+    display: flex;
+    padding: 10px;
+}
+#messagebox{
+    /* width: 120px; */
+    height: 80px;
+    border-radius: 10px;
+    border: 2px solid #01ffe4;
+    text-align: center;
+}
+@media screen and (max-width:600px) {
+    .messages{
+        width: 290;
+        height: 110px;
+        padding-left: 18px;
+    }
+    #messagebox{
+        position: relative;
+        right: 40px;
+        display: flex;
+        width: 300px;
+        height: 70px;
+        text-align: left;
+        /* font-weight: lighter; */
+        padding-right: 10px;
+        /* margin-left: 3px; */
+        /* font-size: 12px; */
+    }
+    *{
+        overflow-x: hidden;
+    }
+    .main{
+        width: 100%;
+        /* background-color: yellow; */
+        font-size: 12px;
+    }
+    .input1, .input2, .formunit, .sub,.result{
+        position: relative;
+        left: -40px;
+        width: 200px;
+    }
+    #result{
+        width: 890px;
+    }
+
+    
+}
