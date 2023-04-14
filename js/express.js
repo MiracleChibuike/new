@@ -6,7 +6,7 @@ function calculate() {
     height = document.getElementById("height").value;
     bmi = document.getElementById("result");
     result = weight/((height/100)**2);
-    bmi.value=result.slice(0,5);
+    bmi.value=result.toFixed(2);
     console.log(height);
 
     if (bmi.value <=15) {
