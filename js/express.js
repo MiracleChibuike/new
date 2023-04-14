@@ -1,3 +1,30 @@
+const metric = document.querySelector('#metric')
+
+console.log(metric.value)
+metric.addEventListener("change", changer)
+
+function changer() {
+    console.log("changer")
+    let rems, rads, docs;
+    rems = document.getElementById("widthunit");
+    rads = document.getElementById("heightunit");
+
+    console.log(rems + " " + " " + rads)
+
+    if (metric.value == "Imperial") {
+        // console.log('imperial')
+        // console.log('rems before', rems.innerHTML)
+        rems.innerHTML = "lbs";
+        // console.log('rems after', rems.innerHTML)
+        // console.log('imperial media')
+        rads.innerHTML = "cm";
+        // console.log('imperial last line')
+    }else {
+        rads.innerHTML = "meters";
+        rems.innerHTML = "kg";
+    }
+
+}
 
 function calculate() {
     let weight, height, result;
@@ -29,3 +56,4 @@ function calculate() {
         // document.getElementById("messagebox").style.textAlign = 'center'
     }
 }
+
